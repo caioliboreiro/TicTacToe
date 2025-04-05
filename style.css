@@ -1,0 +1,124 @@
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.initialModal {
+  border-radius: 10px;
+}
+
+.initialModal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.initialModal form input {
+  border-radius: 5px;
+  border-width: 1.85px;
+  background-color: hsl(0, 0%, 88%);
+  padding: 3.5px;
+}
+
+.playerInput {
+  margin-bottom: 20px;
+}
+
+.playerInputBoxesWrapper {
+  margin-top: 10px;
+  display: flex;
+  gap: 1rem;
+}
+
+.playerInputBox {
+  display: flex;
+  gap: 1rem;
+}
+
+#firstPlayerMarker,
+#secondPlayerMarker {
+  margin-left: 10px;
+  width: 40px;
+  text-align: center;
+}
+
+.startBtn {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1rem;
+  width: 150px;
+  border-radius: 10px;
+  border: 0;
+  background-color: hsl(0, 0%, 83%);
+  align-self: center;
+}
+
+.startBtn:hover {
+  background-color: hsl(0, 0%, 73%);
+}
+
+.startBtn:active {
+  background-color: hsl(0, 0%, 63%);
+}
+
+.gameHeader {
+  margin-bottom: 10px;
+}
+
+.grid {
+  width: 425px;
+  height: 425px;
+  background-color: hsl(0, 0%, 25%);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+.grid div {
+  cursor: pointer;
+  background-color: white;
+
+  font-size: 95px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turnMsg,
+.resetBtn {
+  font-size: 1.5rem;
+}
+
+.resetBtn {
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 7px;
+  border: 0;
+  background-color: hsl(0, 0%, 80%);
+}
+
+.resetBtn:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+.resetBtn:active {
+  background-color: hsl(0, 0%, 60%);
+}

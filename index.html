@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <dialog class="initialModal" open>
+      <form action="">
+        <div class="playerInput">
+          <h3>Primeiro Jogador</h3>
+          <div class="playerInputBoxesWrapper">
+            <div class="playerInputBox">
+              <label for="playerName">Nome</label
+              ><input type="text" name="playerName" id="firstPlayerName" />
+            </div>
+            <div class="playerInputBox">
+              <label for="playerMarker">Marcador</label
+              ><input
+                type="text"
+                name="playerMarker"
+                id="firstPlayerMarker"
+                placeholder="X"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="playerInput">
+          <h3>Segundo Jogador</h3>
+          <div class="playerInputBoxesWrapper">
+            <div class="playerInputBox">
+              <label for="playerName">Nome</label
+              ><input type="text" name="playerName" id="secondPlayerName" />
+            </div>
+            <div class="playerInputBox">
+              <label for="playerMarker">Marcador</label
+              ><input
+                type="text"
+                name="playerMarker"
+                id="secondPlayerMarker"
+                placeholder="O"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="startBtn" type="submit">Começar Jogo</button>
+      </form>
+    </dialog>
+    <h1 class="gameHeader">Jogo da Velha</h1>
+    <div class="grid">
+      <div id="0" class="square"></div>
+      <div id="1" class="square"></div>
+      <div id="2" class="square"></div>
+      <div id="3" class="square"></div>
+      <div id="4" class="square"></div>
+      <div id="5" class="square"></div>
+      <div id="6" class="square"></div>
+      <div id="7" class="square"></div>
+      <div id="8" class="square"></div>
+    </div>
+    <p class="gameMsg"></p>
+    <!-- <button class="resetBtn">Reiniciar</button> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
